@@ -33,7 +33,7 @@ def display(a): # for displaying whole list
 a = []
 while True:
     choice = int(input(
-        "press 1 for enqueue \npress 2 for dequeue\npress 3 for peak element\npress 4 for display list\npress any other keys exit ")) # making choices for calling the functions
+        "press 1 for enqueue \npress 2 for dequeue\npress 3 for peak element\npress 4 for display list\npress 5 for exit \n")) # making choices for calling the functions
     if choice == 1:
         enqueue(a)
     elif choice == 2:
@@ -42,5 +42,7 @@ while True:
         peak(a)
     elif choice == 4:
         display(a)
+    elif choice == 5: 
+        exit()
     else: 
-        break # for exit the program
+        print("Wrong choice try again") 
